@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+header.mui-bar-nav {
+  background-color: #006699;
+}
+header.mui-bar-nav h1 {
+  color: #fff;
+}
+header.mui-bar-nav a {
+  float: right;
+  color: #ffffff;
+}
+nav.mui-bar-tab {
+  background-color: #006699;
+}
+nav.mui-bar-tab a.mui-tab-item {
+  color: #fff;
+}
+nav.mui-bar-tab a.mui-tab-item.mui-active {
+  color: darkorange;
+}
+.mui-action-back.mui-icon.mui-icon-left-nav.mui-pull-left {
+  float: left;
+}
