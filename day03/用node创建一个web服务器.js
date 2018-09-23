@@ -10,7 +10,7 @@ server.on('request',(rad , res) => {
     let url = rad.url;
     if(url == '/'){
         url = 'index.html';
-    }
+    } 
     readFileHtml(res , url);
 //     if(rad.url == '/index.html' || rad.url == '/'){
 //         fs.readFile(path.join(__dirname,'./project/index.html'),'utf-8',(err , data) => {

@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+}
+button{
+    margin: 0 auto;
+}
+.red{
+    background-color:red;
+}
+.pink{
+    background-color:pink;
+}
