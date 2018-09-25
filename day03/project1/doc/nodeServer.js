@@ -4,19 +4,19 @@ const fs = require('fs');
 const path = require('path');
 server.on('request',(rad , res) => {
     let url = rad.url;
-    if(url.indexOf('html') !== -1){
-        res.writeHeader(200,{
-            'Content-Type':'text/html; charset=utf-8'
-        });
-    }else if(url.indexOf('css') !== -1){
-        res.writeHeader(200,{
-            'Content-Type':'text/css; charset=utf-8'
-        });
-    }else if(url.indexOf('js') !== -1){
-        res.writeHeader(200,{
-            'Content-Type':'text/script; charset=utf-8'
-        });
-    }
+    // if(url.indexOf('html') !== -1){
+    //     res.writeHeader(200,{
+    //         'Content-Type':'text/html; charset=utf-8'
+    //     });
+    // }else if(url.indexOf('css') !== -1){
+    //     res.writeHeader(200,{
+    //         'Content-Type':'text/css; charset=utf-8'
+    //     });
+    // }else if(url.indexOf('js') !== -1){
+    //     res.writeHeader(200,{
+    //         'Content-Type':'text/script; charset=utf-8'
+    //     });
+    // }
     console.log(url);
     readFile(url , res);
 })
