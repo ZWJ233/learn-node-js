@@ -1,0 +1,11 @@
+课程要求的必做作业
+1.创建mysql数据库并通过node中安装mysql模块连接
+2.练习数据库的增删改查
+3.练习req.query获取get请求的参数
+4.练习req.params获取路由参数
+5.练习req.body获取post请求的参数
+6.完成英雄页面的接口的制作
+
+加薪的作业
+1.百度一下RESTful接口
+2.说出cors一级复杂请求和简单请求 http://www.ruanyifeng.com/blog/2016/04/cors.html
