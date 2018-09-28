@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vue中的双向绑定演示</title>
+</head>
+<body>
+    <input type="text">
+    <p></p>
+    <script>
+        var data = {name: ''}
+        Object.defineProperty(data, 'name', {
+            get() { // 获取属性值
+                return obj
+            },
+            set(newval) {
+                console.log(99999)
+                // 当data.name发生改变的时候会触发set
+                // 当触发set的时候将输入框中最新的值设置给p完成p标签内容的改变
+                document.querySelector('p').innerHTML = newval
+                
+            }
+        })
+
+        // 监听输入框文本改变
+        document.addEventListener('input', (e) => {
+            // 输入框中的值发生改变 --》 给data.name重新赋值 --》 data.name改变 --》触发set方法 --》将最新的值同步到view中
+            data.name = e.target.value
+            console.log(data)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+课程必做作业
+1.说出传统开发方式和前后端分离开发的区别
+传统开发方式没有明确前后端的界限,后端完成了大量的工作而前端工作量小,分界不清导致了
+交接接口的时候容易出现问题,费时费力.前后端分离很好的解决了这个问题,明确的区分开了前后
+端各自的模块,写完之后进行数据接口的对接即可,提高了工作的效率,减轻了后端的压力
+2.使用querystring.parse()方法
+3.分别使用jsonp和cors完成一次跨域访问请求
+
+加薪作业
+1.百度H5中的pushState和popState并写一个案例 参考 http://www.cnblogs.com/shuiyi/p/5115188.html
+2.PushState+Ajax视线简单的单页面应用SPA http://www.helloweba.net/javascript/386.html

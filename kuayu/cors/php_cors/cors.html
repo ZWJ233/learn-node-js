@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cors跨域解决方案</title>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <input type="button" value="cors请求数据">
+    <script type="text/javascript">
+        var  btn = document.querySelector('input')
+        btn.addEventListener('click', function () {
+            $.ajax({
+                type: 'get',
+                url: 'http://localhost/cors.php',
+                dataType: 'json',
+                success: function (data) {
+                    console.log(data, 'cors请求数据')
+                }
+            })
+        })
+    </script>
+</body>
+</html>

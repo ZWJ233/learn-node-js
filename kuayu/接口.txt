@@ -1,0 +1,35 @@
+﻿1. http://v.juhe.cn/dream/query?key=a3bad6b379879791d5de72c98ea9e88d&q=西瓜
+2. var dreamTxt = '西红柿';
+    let url = `http://apis.juhe.cn/cook/query`
+    var params = {
+        key: '88b2ba529cbaf74346f2b022deb6b3e0',
+        menu: dreamTxt,
+        rn: 10,
+        pn:3
+    }
+
+3. http://www.kugou.com/yy/index.php?r=play/getdata&hash=0B464599DB574F6BD1D9730135970DF8&album_id=516425&_=1500008067482
+
+4. 百度关键词搜索jsonp接口https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=web前端
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

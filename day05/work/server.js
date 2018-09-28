@@ -2,6 +2,8 @@ const express = require('express');
 const mysql = require('mysql');
 const bodyparser = require('body-parser');
 const app = express();
+const cors = require('cors');
+app.use(cors);
 const conn = mysql.createConnection({
     host:'localhost',
     user:'root',
@@ -18,6 +20,12 @@ app.use(bodyparser.urlencoded({extended:false}));
 // 3.练习req.query获取get请求的参数
 // 4.练习req.params获取路由参数
 // 5.练习req.body获取post请求的参数
+app.get('/getallhero',(req , res) => {
+    const sql = "select * from heros";
+    conn.query(sql , (err , result) => {
+        res.send(result);
+    })
+})
 //增
 app.post('/addhero',(req , res) => {
     const date = new Date();
@@ -67,6 +75,7 @@ app.get('/gethero/:id',(req ,res) => {
     })
 })
 
-app.listen(3000,() => {
-    console.log('server running at http://127.0.0.1:3000')
+
+app.listen(5001,() => {
+    console.log('server running at http://127.0.0.1:5001')
 })
